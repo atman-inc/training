@@ -1,5 +1,6 @@
 # GitHub Actions
 
+学習者：m.sasaki
 ### Github Actionsとは
 - Githubが提供するCI/CDのサービス
 
