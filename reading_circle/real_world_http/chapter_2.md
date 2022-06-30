@@ -107,10 +107,10 @@ Jono Bacon
 
 | リクエスト | レスポンス | ネゴシエーション対象 |
 | :----: | :----: | :----: |
-| [Accept](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept) | Content-Typeヘッダ | [MIMEタイプ](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
-| [Accept-Language](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Language) | Content-Languageヘッダ<br>または<br>HTMLタグ | 表示言語 |
-| [Accept-Charset](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Charset) | Content-Typeヘッダ | 文字のキャラクターセット |
-| [Accept-Encoding](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Encoding) | Content-Encodingヘッダ | ボディの圧縮 |
+| [Accept](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept) | [Content-Typeヘッダ](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Type) | [MIMEタイプ](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/MIME_types) |
+| [Accept-Language](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Language) | [Content-Languageヘッダ](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Language)<br>または<br>HTMLタグ | 表示言語 |
+| [Accept-Charset](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Charset) | [Content-Typeヘッダ](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Type) | 文字のキャラクターセット |
+| [Accept-Encoding](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Accept-Encoding) | [Content-Encodingヘッダ](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Encoding) | ボディの圧縮 |
 
 ---
 
