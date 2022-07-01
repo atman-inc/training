@@ -48,21 +48,30 @@
 
 - 実際にRailsで行った内容
 ```
---------------------------1b5d7b2bf91e5cbd
+--------------------------9d6f724f9c3d47ea
 
 Content-Disposition: form-data; name="title"
 
 
 The Art of Community
 
---------------------------1b5d7b2bf91e5cbd
+--------------------------9d6f724f9c3d47ea
 
 Content-Disposition: form-data; name="author"
 
 
 Jono Bacon
 
---------------------------1b5d7b2bf91e5cbd--
+--------------------------9d6f724f9c3d47ea
+
+Content-Disposition: form-data; name="attachement-file"; filename="sample.txt"
+
+Content-Type: text/plain
+
+
+sample file
+
+--------------------------9d6f724f9c3d47ea--
 ```
 
 <br>
