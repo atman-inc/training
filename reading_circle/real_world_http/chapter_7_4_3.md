@@ -33,7 +33,7 @@
   - その後はDATAフレームを使って双方向通信を行なう
 - HTTP/1.1
   - WebSocketの接続用の特殊なメソッドとヘッダーを送信していた
-  - Sec-WebSocket-Keyを元にハッシュでSec-WebSocket-Acceptを生成して通信確率を検証する
+  - Sec-WebSocket-Keyを元にハッシュでSec-WebSocket-Acceptを生成して通信確立を検証する
   ```
   GET /chat HTTP/1.1
   Host: server.example.com
