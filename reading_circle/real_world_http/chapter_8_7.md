@@ -27,7 +27,7 @@
     - 通信回線の状態を判断してダウンロードする動画のビットレートを変えることで可能になる機能
   - 内部はとてもシンプル
 - Media Source Extensions(MSE)
-  - HTTPダウンロードを利用してストリーミング再生するために作られたHTML5用のJavascriptAPI
+  - プラグイン不要で Web ベースのストリーミングメディアを可能にする機能を提供するHTML5用のJavascriptAPI
   - [W3Cによって標準化](https://www.w3.org/TR/media-source-2/)されている
   - 参考サイト
     - [Media Source Extensions](https://qiita.com/tomoyukilabs/items/57ba8a982ab372611669)
