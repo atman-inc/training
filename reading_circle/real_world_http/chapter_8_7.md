@@ -14,7 +14,7 @@
   - デスクトップ
     - Safari
     - Edge
-- 概要
+- HLS概要
   - 動画ファイルを細かく分割して少しづつHTTP通信でダウンロードしながら再生する方式
   - HTTPを使用するため、一般的なWebサーバで使用可能
     - 例：[[CentOS7.6][nginx][HLS]ライブストリーミングサーバ構築](https://trans-it.net/centos7-ngin-livestreaming/)
