@@ -30,7 +30,6 @@
   - プラグイン不要で Web ベースのストリーミングメディアを可能にする機能を提供するHTML5用のJavascriptAPI
   - [W3Cによって標準化](https://www.w3.org/TR/media-source-2/)されている
   - 参考サイト
-    - [Media Source Extensions](https://qiita.com/tomoyukilabs/items/57ba8a982ab372611669)
     - [Media Source Extensions API](https://developer.mozilla.org/ja/docs/Web/API/Media_Source_Extensions_API)
 - VOD
   - ビデオ・オン・デマンドのこと
