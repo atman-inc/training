@@ -24,7 +24,7 @@
       - グリーンスレッドの例: goroutine
         - rubyは1.9からネイティブスレッド
 - フローコントロール: ストリームを効率よく流すために用いられる通信量の制御処理
-  - 速い方の危機が遅い方に、大量のパケットを送りつけて処理できなくなるような事態を防ぐのが目的
+  - 速い方の機器が遅い方に、大量のパケットを送りつけて処理できなくなるような事態を防ぐのが目的
   - 受信側が、バッファに余裕が出ると、余裕が出来た分のバッファサイズをWINDOW_UPDATEフレームで送信側に返す
   - SETTINGSフレームで、初期ウィンドウサイズ、最大の並列ストリーム数、最大フレームサイズ、最大ヘッダーリストサイズなどをチューニング可能
 
@@ -42,7 +42,7 @@
   - https://www.w3.org/TR/resource-hints/
     - > A resource hint link is a dns-prefetch, preconnect, prefetch, or prerender relationship that is used to indicate an origin or resource that should be connected to, or fetched, by the user agent.
 - プリロード: ファイルが必要なことを事前に知らせる方法
-  - Linkヘッダー化、linkタグを使って実現
+  - Linkヘッダーか、linkタグを使って実現
   - 別のドメインのリソースにも使用可能
   - 利用用途: ウェブフォント
 
@@ -88,8 +88,8 @@ QUICがRFC化される中でHTTP/3となっていった
 - 2015年: RFC化のための最初の提案を実施
   - Google版QUIC: gQUIC
   - IETF版QUIC: iQUIC
-  - HTTP over QUICK: HTTP/3
-- 2021年5月: IEFFがQUICプロトコルををRFC 9000として勧告
+  - HTTP over QUIC: HTTP/3
+- 2021年5月: IETFがQUICプロトコルををRFC 9000として勧告
   - https://www.publickey1.jp/blog/21/http3quicietfrfc_9000.html
 - 2022年6月: IETFがHTTP/3をRFC 9114として勧告
   - https://xtech.nikkei.com/atcl/nxt/news/18/13024/
@@ -99,7 +99,8 @@ QUICがRFC化される中でHTTP/3となっていった
 - QUICトランスポート: ストリーム制御などのTCPの上位互換のレイヤーとTLS1.3
   - TCPとTLSのレイヤーの置き換え
     - HTTP/2と異なり、TLSを使わないプロトコルが定義されていない
-  - ストリーム内の順序の保証をするが、ストリーム間の保証はしない
+  - TCPとの違い: ストリーム内の順序の保証をするが、ストリーム間の保証はしない
 - HTTP over QUIC: HTTP/2の機能から、QUICトランスポートと重複する機能を落としてシンプルにして、HPACKをQPACKに置き換えたもの
+  - -> HTTP/3となった
 
 ![](https://blog.redbox.ne.jp/images/quic-osi-layer.png)
