@@ -29,13 +29,21 @@
 ### 10.1.2 Web APIとトランザクション
 
 - RESTfulの場合以下を満たす必要がある
-  - クライアント側では管理するべきステートが存在せず、1介護とのリクエストは独立して発行できる
+  - クライアント側では管理するべきステートが存在せず、1回ごとのリクエストは独立して発行できる
 - RESTfulにするためには、1リクエストをAtomicにするしかない
   - しかし、多くのユーザーが使うAPIではユースケースが汎用的になるので粒度が細かいAPIセットにせざるを得ない
     - その場合のAPIサーバー側で出来る方法:
       1. 連続して呼び出す
+          - multipart/mixed
       2. ソフトウェアでトランザクションを自作する
+          - サーガ
+            - pending -> 処理する -> accepted
+            - -> サーガはジョブなど冪等にするのが難しいものに用いることがある
+              - 同時実行されたくないジョブ
+                - DBでロックを取って行う
       3. 後からチェックプログラムをバッチで走らせる
+         - 結果整合のチェックをする
+           - 本当にずれていないかチェックするジョブ
 
 ### 10.1.3 HATEOAS
 
@@ -79,6 +87,10 @@ REST APIは階層化されたリソースを持ち、HTTPのシンタックス�
 - XMLHttpRequestはGETとHEAD時にボディーを指定しても無視する
 - オーバーロードPOST
   - ヘッダーなどにPUTやDELETEであることを入れ、メソッド自体はPOSTにする
+  - フォームがGETとPOSTしかできないのでその回避策
+    - Railsの例
+      - 実装はdestroyで実装
+      - `<input type="hidden" name="_method" value="delete" />`
 - [Custom methods](https://cloud.google.com/apis/design/custom_methods)
   - They should only be used for functionality that cannot be easily expressed via standard methods
 
