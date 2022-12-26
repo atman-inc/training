@@ -42,7 +42,6 @@
 
 - サービスを提供できるかどうかを確認します
 - DB や外部 API など、バックエンドが依存しているサービスも確認できる
-
   - サーバー自体は起動しているが、一時的にリソースを使い尽くしてレスポンスが返せない状態
 
     - Kubernetes は Pod を再起動します
@@ -60,7 +59,6 @@
   - 外部のインターネットから隠す
   - 同一社内で、責任区分をきっちり分けて運用する
 - VPC と外部の接続
-
   - インターネットゲートウェイ：外部と接続
   - ピアリング：VPC 同士を接続
   - ダイレクトコネクト（インターネットコネクト）：専用線で接続
@@ -82,6 +80,8 @@
   - 負荷分散できる
   - 一方、JWT は情報量が必要以上に多いため、ユーザーの目に触れるとことに置いておくのはセキュリティ上望ましくない
   - BEF(フロント側のサーバーとブラウザ間でランダムな認証トークン)で JWT トークンを発行し、後段のマイクロサービスには JWT を送付するような組み合わせが利用されることもある
+  - [トークンベースの認証とは？ 仕様とJWTのメリット、デメリット
+](https://www.okta.com/jp/identity-101/what-is-token-based-authentication/)
 - クラウドサービス
   - [IAM とは](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/introduction.html)
   - [GCP（Google Cloud Platform）とは？](https://udemy.benesse.co.jp/development/system/gcp.html)
