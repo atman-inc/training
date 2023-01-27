@@ -12,6 +12,7 @@
   - https://www.itscom.co.jp/forbiz/column/vpn/4562/
 - 中間者攻撃を避けるには、HTTPS(TLS)を利用するしかない
   - TLSでもノーリスクではない (HSTSで解説)
+- どうしても公衆Wifi使うときはVPNを使うように
 
 ## 14.4.4.1 HTTP Strict Transport Security (HSTS)
 
@@ -24,8 +25,9 @@ https://developer.mozilla.org/ja/docs/Glossary/HSTS
     - Strict-Transport-Security: max-age=<expire-time>; includeSubDomains
       - includeSubDomainsがあると、この規則がサイトのすべてのサブドメインにも適用される
 - ブラウザは内部にこのヘッダーを送信したURLのデータベースを持ち、URLにアクセスする際に参照する
+- ALBにはオプションがある
 - 初回はどうするか: 
-  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Strict-Transport-Security#strict_transport_security_%E3%81%AE%E3%83%97%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89
+  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Strict-Transport-Security#strict_transport_security_%E3%81%AE%E3%83%97%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89  
   - Chromeは以下から事前申請が可能
     - https://hstspreload.org/
     - サーバー側は以下の形式のレスポンスヘッダーを付けるようにしておく必要がある
